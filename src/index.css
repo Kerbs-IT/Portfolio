@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Geist',sans-serif;
+}
+body{
+  width: 100%;
+  display: flex ;
+  justify-content: center;
+}
+#root{
+  width: 900px;
+  margin-top: 50px;
+}
+#profile-img{
+
+  max-height: 150px;
+  max-width: 150px;
+}
+.btn-hover-effect {
+  transition: 2s ease-in-out;
+}
+.btn-hover-effect:hover{
+  cursor: pointer;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+}
