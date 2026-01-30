@@ -10,9 +10,13 @@ function App() {
   return (
     <>
       <Header name="Kerby Buan"></Header>
-      <About />
+      <main>
+        <section>
+          <About />
+        </section>
+      </main>
     </>
-  )
+  );
 }
 
 export default App

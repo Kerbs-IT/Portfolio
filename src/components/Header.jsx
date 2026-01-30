@@ -5,7 +5,7 @@ import profilePicture from '../assets/formal_profile_pic.png'
 
 const Header = (props) => {
   return (
-    <header className='d-flex gap-3 align-items-center shadow rounded mb-4'>
+    <header className='d-flex gap-3 align-items-center shadow-sm rounded mb-4'>
           <img src={profilePicture} alt="profile picture" className='rounded shadow' id='profile-img' />
           <div className="header-content">
             <h3 className='h3 fw-bold'>{props.name}</h3>
