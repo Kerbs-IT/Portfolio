@@ -1,30 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Geist:wght@100..900&display=swap');
 
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Geist',sans-serif;
+  
 }
+
 body{
   width: 100%;
-  display: flex ;
-  justify-content: center;
+
+}
+:root{
+  --bungeeFont: 'Bungee',san-serif;
+  --geistFont: 'Geist',san-serif;
 }
 #root{
-  width: 900px;
-  margin-top: 50px;
+  padding: 0 100px;
 }
-#profile-img{
 
-  max-height: 150px;
-  max-width: 150px;
+/* Header */
+
+.logo-name{
+  font-family: var(--bungeeFont);
+
 }
-.btn-hover-effect {
-  transition: 2s ease-in-out;
+ul{
+  list-style: none;
 }
-.btn-hover-effect:hover{
-  cursor: pointer;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+.nav-item  a{
+  text-decoration: none;
+
+}
+ul li{
+  transition: 0.3s ease-in-out;
+}
+ul li a,
+.mode a{
+  font-family: var(--bungeeFont);
+  
+}
+.home{
+  min-height: 90vh;
+}
+
+/* font section */
+.geist-font{
+  font-family: var(--geistFont);
+}
+.burgee-font {
+  font-family: var(--bungeeFont);
+  font-size: clamp(1rem, 3vw, 5rem);
+}
+
+/* hero image */
+#home-hero-image {
+  animation: heroMovement 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes heroMovement {
+  from {
+    transform: translateY(-5px);
+  }
+
+  to {
+    transform: translateY(5px);
+  }
 }

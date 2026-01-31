@@ -1,31 +1,65 @@
 
+import { useState } from 'react';
 import profilePicture from '../assets/formal_profile_pic.png'
 
 
 
-const Header = (props) => {
+const Header = () => {
+  const navElement = [
+    { itemText: "HOME", itemLink: "home" },
+     { itemText: "ABOUT", itemLink: "about" },
+    { itemText: "PROJECT", itemLink: "project" },
+     { itemText: "CONTACT", itemLink: "contact" },
+  ];
+  let [ActiveLink, setActiveLink ] = useState("home");
   return (
-    <header className='d-flex gap-3 align-items-center shadow-sm rounded mb-4'>
-          <img src={profilePicture} alt="profile picture" className='rounded shadow' id='profile-img' />
-          <div className="header-content">
-            <h3 className='h3 fw-bold'>{props.name}</h3>
-            <div className="mb-2 d-flex align-items-center">
-                <i className="fa-solid fa-location-dot"></i>
-                <p className='mb-0'>Cavite, Philippines</p>
-              </div>
-              {/* Role */}
-              <div className="mb-2">
-                  Aspiring Web Developer
-              </div>
-              {/* Email Btn */}
+    <header className="mb-4 pt-2">
+      <nav className="  d-flex gap-3 align-items-center justify-content-between ">
+        <h1 className="logo-name h1 mb-0">Kerbs</h1>
 
-            <div className="mb-2">
-                  <button className='btn border  btn-hover-effect'><i className="fa-regular fa-envelope"></i> Send  email</button>
-            </div>
-              
-          </div>  
+        <div className="">
+          <ul className="d-flex align-items-center justify-content-between gap-3 mb-0">
+            <span
+              className="nav-bg"
+              style={{
+                transform: `translateX(${
+                  navElement.findIndex((item) => item.itemLink === ActiveLink) *
+                  100
+                }%)`,
+              }}
+            />
+            {navElement.map((item) => (
+              <li
+                key={item.itemLink}
+                className={
+                  ActiveLink === item.itemLink
+                    ? "nav-item text-white rounded p-1 bg-black"
+                    : "nav-item"
+                }
+              >
+                <a
+                  className={
+                    ActiveLink === item.itemLink
+                      ? "text-white fs-5"
+                      : "text-dark fs-5"
+                  }
+                  href={`#${item.itemLink}`}
+                  onClick={() => {
+                    setActiveLink(item.itemLink);
+                  }}
+                >
+                  {item.itemText}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="mode">
+          <i className="fa-solid fa-moon fs-3"></i>
+        </div>
+      </nav>
     </header>
-  )
+  );
 }
 
 export default Header
