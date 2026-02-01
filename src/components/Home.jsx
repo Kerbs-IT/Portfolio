@@ -1,5 +1,5 @@
 import heroImage from '../assets/Programming-amico.svg'
-
+import Socials from './Socials.jsx'
 function Home() {
   return (
     <div className="d-flex align-items-center home justify-content center">
@@ -10,6 +10,9 @@ function Home() {
         <h1 className="burgee-font ">
           Web Developer /<br /> Software Developer{" "}
         </h1>
+        <div className="socials">
+          <Socials />
+        </div>
       </div>
       <div className="home-hero w-50">
         <img src={heroImage} alt="hero image" id="home-hero-image" />

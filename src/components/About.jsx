@@ -1,12 +1,11 @@
 const About = () => {
   return (
-    <div className="card border-0 shadow-sm p-2">
+    <div className="mb-4">
       <div className="mb-2 fw-bold fs-5 d-flex gap-3 align-items-center">
-        <i className="fa-solid fa-briefcase "></i>
-        <p className="mb-0">About</p>
+        <p className="mb-0 burgee-font">About Me</p>
       </div>
-      <p className="text-wrap fs-7">
-        I'm an Aspiring and motivated web developer with nearly four years of
+      <p className="geist-font fs-5">
+        I'm Kerby G. Buan an Aspiring and motivated web developer with nearly four years of
         hands-on experience through academic and project-based development.
         Skilled in working with various web technologies and frameworks,
         including PHP, Laravel, MySQL, HTML, CSS, and JavaScript. Experienced in
@@ -14,9 +13,7 @@ const About = () => {
         other interactive platforms.
         <br />
         <br />I enjoy developing simple, functional, and maintnable websites
-        that solve real world projects.
-        <br />
-        Also,Familiar with MVC architecture, CRUD operations, and RESTful
+        that solve real world projects.Also,Familiar with MVC architecture, CRUD operations, and RESTful
         concepts. <br />
         <br />
         Currently, I've been trying to learn React js to expand my knowledge of

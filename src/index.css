@@ -9,6 +9,7 @@
 
 body{
   width: 100%;
+  background-color: #F9FAFB !important;
 
 }
 :root{
@@ -16,7 +17,7 @@ body{
   --geistFont: 'Geist',san-serif;
 }
 #root{
-  padding: 0 100px;
+  padding: 10px 100px;
 }
 
 /* Header */
@@ -50,7 +51,7 @@ ul li a,
 }
 .burgee-font {
   font-family: var(--bungeeFont);
-  font-size: clamp(1rem, 3vw, 5rem);
+  font-size: clamp(1rem, 3.6vw, 5rem);
 }
 
 /* hero image */
@@ -66,4 +67,13 @@ ul li a,
   to {
     transform: translateY(5px);
   }
+}
+
+/* tech item */
+.tech-item{
+  transition: .3s ease-in-out;
+}
+
+.tech-item:hover{
+  transform: translateY(-5px);
 }
