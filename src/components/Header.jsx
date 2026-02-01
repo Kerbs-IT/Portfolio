@@ -13,9 +13,11 @@ const Header = () => {
   ];
   let [ActiveLink, setActiveLink ] = useState("home");
   return (
-    <header className="mb-4 pt-2 d-sticky">
+    <header className="mb-4 pt-2 d-sticky ">
       <nav className="  d-flex gap-3 align-items-center justify-content-between ">
-        <h1 className="logo-name h1 mb-0">Kerbs</h1>
+        <h1 className="logo-name h1 mb-0">
+          <a href="#home" className='text-decoration-none text-black'>Kerbs</a>
+        </h1>
 
         <div className="">
           <ul className="d-flex align-items-center justify-content-between gap-3 mb-0">

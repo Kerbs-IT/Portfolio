@@ -5,6 +5,7 @@ import Header from './components/Header'
 import About from './components/About'
 import Home from './components/Home'
 import TechStack from './components/TechStack'
+import Education from './components/Education'
 
 function App() {
  
@@ -18,6 +19,7 @@ function App() {
         </section>
         <section id='about'>
           <About />
+          <Education/>
           <TechStack />
         </section>
       </main>

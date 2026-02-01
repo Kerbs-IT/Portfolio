@@ -21,10 +21,18 @@ body{
 }
 
 /* Header */
-
+header{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #F9FAFB !important;
+}
 .logo-name{
   font-family: var(--bungeeFont);
 
+}
+html{
+  scroll-padding: 100px;
 }
 ul{
   list-style: none;
@@ -76,4 +84,57 @@ ul li a,
 
 .tech-item:hover{
   transform: translateY(-5px);
+}
+
+/* education  */
+.education-container{
+  position:relative;
+}
+.card-container{
+  padding: 0 50px;
+}
+
+.card-container .item{
+  height: 100%;
+  position:relative;
+}
+.card-container .item::after{
+  content: '';
+  position: absolute;
+  width: 2px;
+  top:17px;
+  left: -20px;
+  height: 100%;
+
+  border: 2px solid rgba(0,0,0,0.2);
+ 
+}
+.card-container .item h5::after{
+  content: '';
+  position: absolute;
+  left:-25px;
+  top:5px;
+  width: 15px;
+  border-radius: 50%;
+  height: 15px;
+  
+  border: 3px solid black;
+
+}
+.card-container .item.active h5::after > {
+  background-color: black;
+}
+.home-item{
+  flex: 1 1 0;
+}
+
+@media (max-width:768px) {
+  
+}
+@media (max-width:900px) {
+  .home-hero,
+  .home-hero img{
+    display: none !important;
+  }
+ 
 }
