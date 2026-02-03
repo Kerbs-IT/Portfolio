@@ -6,6 +6,8 @@ import About from './components/About'
 import Home from './components/Home'
 import TechStack from './components/TechStack'
 import Education from './components/Education'
+import Certificate from './components/Certificate'
+import Projects from './components/Projects'
 
 function App() {
  
@@ -19,8 +21,10 @@ function App() {
         </section>
         <section id='about'>
           <About />
-          <Education/>
+          <Education />
+          <Certificate />
           <TechStack />
+          <Projects />
         </section>
       </main>
     </>

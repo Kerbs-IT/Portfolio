@@ -20,7 +20,7 @@ const TechStack = () => {
       <h1 className="burgee-font">Technologies</h1>
       <div className="tech-container d-flex gap-2 flex-wrap">
         {tech.map((item) => (
-          <div className="tech-item d-flex align-items-center justify-content-center border-dark border py-1 px-2 gap-1 rounded bg-white">
+          <div key={item.techName} className="tech-item d-flex align-items-center justify-content-center border-dark border py-1 px-2 gap-1 rounded bg-white">
             <i className={`fa-brands fa-${item.techClassName} fs-1`}></i>
             <span className="geist-font fs-5">{item.techName}</span>
           </div>

@@ -11,7 +11,7 @@ const Header = () => {
     { itemText: "PROJECT", itemLink: "project" },
      { itemText: "CONTACT", itemLink: "contact" },
   ];
-  let [ActiveLink, setActiveLink ] = useState("home");
+  let [ActiveLink, setActiveLink ] = useState("project");
   return (
     <header className="mb-4 pt-2 d-sticky ">
       <nav className="  d-flex gap-3 align-items-center justify-content-between ">

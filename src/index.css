@@ -32,7 +32,7 @@ header{
 
 }
 html{
-  scroll-padding: 100px;
+  scroll-padding: 70px;
 }
 ul{
   list-style: none;
@@ -121,6 +121,9 @@ ul li a,
   border: 3px solid black;
 
 }
+.card-container .item h5.active::after{
+  background-color: black;
+}
 .card-container .item.active h5::after > {
   background-color: black;
 }
@@ -137,4 +140,28 @@ ul li a,
     display: none !important;
   }
  
+}
+/* certificate */
+.certificate-item{
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+.certificate-item:hover{
+  transform: translateY(-5px);
+}
+/* project section */
+/* .project-item{
+  min-height: 400px;
+} */
+ 
+.project-img{
+  height: 300px;
+  overflow: hidden;
+}
+.project-img img{
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover !important;
+  object-position: center;
 }
